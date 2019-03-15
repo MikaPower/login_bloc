@@ -23,3 +23,6 @@ import 'package:login_bloc/src/blocs/validators.dart';
     _passwordController.close();
   }
     }
+
+
+    final bloc =Bloc();
