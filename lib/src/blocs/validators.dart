@@ -22,7 +22,7 @@ class Validators {
        sink.add(password);
      }
      else{
-       sink.addError('Password must be at least 4 chars')
+       sink.addError('Password must be at least 4 chars');
      }
    }
  );
