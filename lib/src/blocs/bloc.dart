@@ -25,4 +25,4 @@ import 'package:login_bloc/src/blocs/validators.dart';
     }
 
 
-    final bloc =Bloc();
+   // final bloc =Bloc(); single instance

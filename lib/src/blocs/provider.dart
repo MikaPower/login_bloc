@@ -6,6 +6,10 @@ class Provider extends InheritedWidget{
   final bloc = Bloc();
 
 
+  Provider({Key key,Widget child})
+  : super(key: key,child: child);
+
+
 
 
   @override
@@ -16,7 +20,7 @@ class Provider extends InheritedWidget{
 
 
   static Bloc of(BuildContext context){
-    return (context.inheritFromWidgetOfExactType(Provider) as Provider).bloc
+    return (context.inheritFromWidgetOfExactType(Provider) as Provider).bloc;
 
 
   }
