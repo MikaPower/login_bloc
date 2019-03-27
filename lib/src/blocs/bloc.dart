@@ -24,9 +24,14 @@ Stream<bool> get submitValid => Observable.combineLatest2(email, password, (e,p)
   submit(){
     final validEmail= _emailController.value;
     final validPassword = _passwordController.value;
+    requestLoginAPI(context, validEmail, validPassword);
+
+
+
+
     
     print('email is $validEmail');
-    print('passowrd is $validPassword');
+    print('password is $validPassword');
   }
 
   dispose(){
